@@ -1,4 +1,4 @@
-# Android Projects Collection
+# Android Projects Collection 
 
 This repository contains a collection of several Android projects that I developed during my college time. These projects showcase a variety of features and functionalities, demonstrating my proficiency in Java and Android development.
 
