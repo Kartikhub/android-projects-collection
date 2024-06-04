@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/back"
+    tools:context="com.example.lenovo.vision.Team">
+<TextView
+    android:id="@+id/follow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:text="For any suggestion and query, feel free to contact anyone of the following:"
+    android:textSize="20sp"
+    android:textColor="@android:color/white"
+    />
+    <ListView
+        android:id="@+id/teamList"
+        android:layout_below="@+id/follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+
+
+</RelativeLayout>

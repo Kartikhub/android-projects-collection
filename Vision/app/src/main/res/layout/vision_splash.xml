@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/computer_kuan_322419_10"
+    tools:context="com.example.lenovo.vision.VisionSplash">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mbm"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"/>
+    <LinearLayout
+        android:layout_above="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <ImageView
+           android:layout_marginLeft="10dp"
+            android:layout_width="71dp"
+            android:layout_height="57dp"
+            android:src="@drawable/vision5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="40sp"
+            android:text="Vision 2k16"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/harshit5" />
+    <TextView
+        android:id="@+id/frname"
+        android:text="Harshit Agrawal"
+        android:textSize="37sp"
+        android:gravity="center"
+        android:layout_below="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/fr"
+        android:layout_marginTop="7dp"
+        android:text="(for faculty representative)"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_below="@+id/frname"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="An initiative to bring a change"/>
+</RelativeLayout>

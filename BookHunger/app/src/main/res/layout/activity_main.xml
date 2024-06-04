@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.lenovo.bookhunger.MainActivity"
+    android:background="#f4f4f4"
+    >
+<ScrollView
+android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recview"
+
+            android:background="@android:color/white"
+            android:layout_margin="10dp"
+            android:elevation="10dp"/>
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="5dp"
+            android:background="#fff"
+            android:layout_margin="10dp">
+<ImageButton
+    android:id="@+id/btn"
+    android:layout_width="100dp"
+    android:layout_height="55dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/download"
+    android:elevation="10dp"
+
+    />
+            <RelativeLayout
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:elevation="15dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical" >
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:src="@drawable/download"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" add to cart"
+                    android:elevation="12dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="monospace"/>
+                </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="5dp"
+            android:background="#fff"
+            android:layout_margin="10dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click"
+                android:id="@+id/click"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:elevation="5dp"
+            android:background="#fff"
+            android:layout_margin="10dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

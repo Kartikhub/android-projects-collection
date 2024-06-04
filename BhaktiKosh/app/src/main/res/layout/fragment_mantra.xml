@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9c4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.akar.bhaktikosh.MantraFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:orientation="vertical"
+        android:columnCount="2">
+
+    //1
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardm1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#fff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1.2">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:id="@+id/m1"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/mantra1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#fcb503"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardm2"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            app:cardElevation="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1.2">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/m2"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/mantra2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#fcb503"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardm3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            app:cardElevation="10dp"
+            android:clickable="true"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1.2">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:id="@+id/m3"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/mantra3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#fcb503"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+</GridLayout>
+
+</ScrollView>
+
+
+</RelativeLayout>

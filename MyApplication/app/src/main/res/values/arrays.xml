@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items_entry"><item name="earphones">earphones</item>
+        <item name= "Mobile phone">Mobile phone</item>
+        <item name= "laptop">laptop</item>
+        <item name= "hard disk">hard disk</item>
+        <item name= "wallet">wallet</item>
+        <item name= "charger">charger</item>
+        </string-array>
+</resources>

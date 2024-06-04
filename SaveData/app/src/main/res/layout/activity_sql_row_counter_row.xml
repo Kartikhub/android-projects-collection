@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dip"
+    >
+    <TextView
+        android:textSize="24sp"
+        android:id="@+id/row_counter_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:textSize="24sp"
+    android:layout_centerInParent="true"
+    android:id="@+id/row_counter_value"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/row_counter_remove"
+        android:layout_alignBaseline="@+id/row_counter_value"
+        android:layout_toLeftOf="@+id/row_counter_value"
+        android:layout_width="wrap_content"
+        android:text="-"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/row_counter_add"
+        android:layout_alignBaseline="@+id/row_counter_value"
+        android:layout_toRightOf="@+id/row_counter_value"
+        android:layout_width="wrap_content"
+        android:text="+"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/row_counter_delete"
+        android:layout_width="wrap_content"
+        android:text="X"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

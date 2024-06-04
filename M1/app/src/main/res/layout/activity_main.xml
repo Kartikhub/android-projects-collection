@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   tools:context="com.example.lenovo.m1.MainActivity">
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/fiirstname"
+            android:hint="First Name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:layout_height="0dp" />
+        <EditText
+            android:id="@+id/lastname"
+            android:hint="Last Name"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/fathername"
+            android:hint="Father's Name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/photo"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/facultyno"
+            android:hint="Faculty Number"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:maxLines="1"
+            android:inputType="number|text"
+            android:layout_weight="1"/>
+
+        <EditText
+        android:id="@+id/branch"
+            android:hint="Branch"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_weight="1"/>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/gender"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="50dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Gender :"
+                android:textSize="20dp"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/male"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <RadioButton
+                android:layout_below="@+id/male"
+                android:id="@+id/female"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+        <EditText
+        android:id="@+id/email"
+        android:hint="Email ID"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textEmailAddress|textWebEmailAddress"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/phone"
+            android:hint="Phone"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="textPassword|textWebPassword"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1.7">
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Accept terms and conditions"/>
+        <Button
+            android:layout_width="0dp"
+            android:text="->"
+            android:textSize="20dp"
+            android:onClick="aa"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="7dp"
+        android:text="Register"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btnback"
+        />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
